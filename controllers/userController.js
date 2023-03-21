@@ -118,7 +118,7 @@ const loginUser=async(req,res)=>{
                 // const token=jwt.sign({email: user.email,id:user._id},'secret_key');
 
                 // res.cookie('token',token).redirect('/');
-                res.status(200).send({message:"User logged in",user:userData});
+                res.status(200).send({message:"User logged in",user:userData,token:token});
             }
             else
             {
